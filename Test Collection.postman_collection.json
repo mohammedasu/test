@@ -1,0 +1,572 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Test Collection",
+		"_postman_id": "7dc94c03-8efc-8e7e-dfad-e49688c0d8d9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/register",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/register",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "Mohammed",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Asu",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "8169188810",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mohammedasu14@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "30",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "m",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Mumbai",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Register User API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/login",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "mohammedasu14@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Login API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/users",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTQ3MjM1OCwiZXhwIjoxNjE1NDc1OTU4LCJuYmYiOjE2MTU0NzIzNTgsImp0aSI6IkhmR013RVZPWkJNQWx2b3UiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.3TIHjCaAZdpv6vqX2GQYOxpCdKiY3-AGRaHfUqd0zVc",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Get User API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/users/1",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/users/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTQ3MjM1OCwiZXhwIjoxNjE1NDc1OTU4LCJuYmYiOjE2MTU0NzIzNTgsImp0aSI6IkhmR013RVZPWkJNQWx2b3UiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.3TIHjCaAZdpv6vqX2GQYOxpCdKiY3-AGRaHfUqd0zVc",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Get Specific User With id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/users/1",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/users/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTU1NzU5MCwiZXhwIjoxNjE1NTYxMTkwLCJuYmYiOjE2MTU1NTc1OTAsImp0aSI6IkxlZnNWUmpTRXlKYWdwcjQiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.tkhwGUkZ-JT8nCWFE4QxO8JKfLHF1N6mNUiNNezQZ0g",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstname",
+							"value": "Mohammed Yasin Asu",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "lastname",
+							"value": "Asu",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "mobile",
+							"value": "8169188810",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "age",
+							"value": "30",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "gender",
+							"value": "m",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "city",
+							"value": "Mumbai",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": "Update USer API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/users",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTU1NzU5MCwiZXhwIjoxNjE1NTYxMTkwLCJuYmYiOjE2MTU1NTc1OTAsImp0aSI6IkxlZnNWUmpTRXlKYWdwcjQiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.tkhwGUkZ-JT8nCWFE4QxO8JKfLHF1N6mNUiNNezQZ0g",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "Mohammed1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "lastname",
+							"value": "Asu",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "mobile",
+							"value": "9773061129",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "mohammedasu28@gmail.com",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "age",
+							"value": "30",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "gender",
+							"value": "m",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "city",
+							"value": "Mumbai",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password_confirmation",
+							"value": "123456",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": "Create User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/users/2",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/users/2",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTQ3MjM1OCwiZXhwIjoxNjE1NDc1OTU4LCJuYmYiOjE2MTU0NzIzNTgsImp0aSI6IkhmR013RVZPWkJNQWx2b3UiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.3TIHjCaAZdpv6vqX2GQYOxpCdKiY3-AGRaHfUqd0zVc",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Delete User API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/active-user",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/active-user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTU1NzU5MCwiZXhwIjoxNjE1NTYxMTkwLCJuYmYiOjE2MTU1NTc1OTAsImp0aSI6IkxlZnNWUmpTRXlKYWdwcjQiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.tkhwGUkZ-JT8nCWFE4QxO8JKfLHF1N6mNUiNNezQZ0g",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Active User API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/books",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/books",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTU0NDEyMCwiZXhwIjoxNjE1NTQ3NzIwLCJuYmYiOjE2MTU1NDQxMjAsImp0aSI6Im8xMWxrVzJpcTJRTnZuV3MiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.kMbQEhMCKhxo_M8vjHE4lg4__C7CVeqoUYq7jjnpdb8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Get List Of Book API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/books",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/books",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTU0NDEyMCwiZXhwIjoxNjE1NTQ3NzIwLCJuYmYiOjE2MTU1NDQxMjAsImp0aSI6Im8xMWxrVzJpcTJRTnZuV3MiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.kMbQEhMCKhxo_M8vjHE4lg4__C7CVeqoUYq7jjnpdb8",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "book_name",
+							"value": "English",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "author",
+							"value": "Mohammed",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "cover_image",
+							"value": "",
+							"type": "file",
+							"description": ""
+						}
+					]
+				},
+				"description": "Insert Book API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/books/1",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/books/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTU0NDEyMCwiZXhwIjoxNjE1NTQ3NzIwLCJuYmYiOjE2MTU1NDQxMjAsImp0aSI6Im8xMWxrVzJpcTJRTnZuV3MiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.kMbQEhMCKhxo_M8vjHE4lg4__C7CVeqoUYq7jjnpdb8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Get Specific Book With ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/books/1?_method=PUT",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/books/1?_method=PUT",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"books",
+						"1"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "PUT",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTU0NDEyMCwiZXhwIjoxNjE1NTQ3NzIwLCJuYmYiOjE2MTU1NDQxMjAsImp0aSI6Im8xMWxrVzJpcTJRTnZuV3MiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.kMbQEhMCKhxo_M8vjHE4lg4__C7CVeqoUYq7jjnpdb8",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "book_name",
+							"value": "English",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "author",
+							"value": "Mohammed",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "cover_image",
+							"value": "",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "_method ",
+							"value": "PUT",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Update Book API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/books/1",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/books/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTU0NDEyMCwiZXhwIjoxNjE1NTQ3NzIwLCJuYmYiOjE2MTU1NDQxMjAsImp0aSI6Im8xMWxrVzJpcTJRTnZuV3MiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.kMbQEhMCKhxo_M8vjHE4lg4__C7CVeqoUYq7jjnpdb8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Delete Book API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/get-rented-list",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/get-rented-list",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTU1Mzk0MiwiZXhwIjoxNjE1NTU3NTQyLCJuYmYiOjE2MTU1NTM5NDIsImp0aSI6IjNGSmJTSjJlalZJQUlVbmsiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.E2l8K8Qp8U59BGwyM9Dlnef8dH6Uc9HQtLlekqr9_7A",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "List Rented book API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/return-book",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/return-book",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTU1Mzk0MiwiZXhwIjoxNjE1NTU3NTQyLCJuYmYiOjE2MTU1NTM5NDIsImp0aSI6IjNGSmJTSjJlalZJQUlVbmsiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.E2l8K8Qp8U59BGwyM9Dlnef8dH6Uc9HQtLlekqr9_7A",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "book_id",
+							"value": "2",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": "Return Book API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/buy-book",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/buy-book",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTYxNTU1Mzk0MiwiZXhwIjoxNjE1NTU3NTQyLCJuYmYiOjE2MTU1NTM5NDIsImp0aSI6IjNGSmJTSjJlalZJQUlVbmsiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.E2l8K8Qp8U59BGwyM9Dlnef8dH6Uc9HQtLlekqr9_7A",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "book_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Buy Book API"
+			},
+			"response": []
+		}
+	]
+}
